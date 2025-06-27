@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WMW",
+    "WPW",
+    "WCW"
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:red_mushroom"
+    },
+    "W": {
+      "tag": "minecraft:logs"
+    },
+    "P": [
+      {
+        "item": "minecraft:mycelium"
+      },
+      {
+        "item": "minecraft:podzol"
+      },
+      {
+        "item": "minecraft:crimson_nylium"
+      },
+      {
+        "item": "minecraft:warped_nylium"
+      }
+    ],
+    "C": {
+      "item": "minecraft:chest"
+    }
+  },
+  "result": {
+    "id": "travelersgarden:red_mushroom_farm",
+    "count": 1
+  }
+}

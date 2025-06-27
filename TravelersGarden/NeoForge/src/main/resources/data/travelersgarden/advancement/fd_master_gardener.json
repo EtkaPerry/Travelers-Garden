@@ -1,0 +1,70 @@
+{
+  "display": {
+    "icon": {
+      "id": "travelersgarden:fd_cabbage_farm"
+    },
+    "title": {
+      "translate": "advancements.travelersgarden.fd_master_gardener.title"
+    },
+    "description": {
+      "translate": "advancements.travelersgarden.fd_master_gardener.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "travelersgarden:farmers_delight_root",  "criteria": {
+    "has_fd_cabbage_farm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "travelersgarden:fd_cabbage_farm"
+            ]
+          }
+        ]
+      }
+    },
+    "has_fd_tomato_farm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "travelersgarden:fd_tomato_farm"
+            ]
+          }
+        ]
+      }
+    },
+    "has_fd_onion_farm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "travelersgarden:fd_onion_farm"
+            ]
+          }
+        ]
+      }
+    },
+    "has_fd_rice_farm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "travelersgarden:fd_rice_farm"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 500
+  }
+}

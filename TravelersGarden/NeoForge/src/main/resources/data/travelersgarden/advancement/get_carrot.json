@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:carrot"
+    },
+    "title": {
+      "translate": "advancements.travelersgarden.get_carrot.title"
+    },
+    "description": {
+      "translate": "advancements.travelersgarden.get_carrot.description"
+    },    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true},
+  "parent": "travelersgarden:root",
+  "criteria": {
+    "get_carrot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "travelersgarden:carrot_farm"
+    ]
+  }
+}

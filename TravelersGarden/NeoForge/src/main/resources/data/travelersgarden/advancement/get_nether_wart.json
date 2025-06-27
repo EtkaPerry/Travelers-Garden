@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:nether_wart"
+    },
+    "title": {
+      "translate": "advancements.travelersgarden.get_nether_wart.title"
+    },
+    "description": {
+      "translate": "advancements.travelersgarden.get_nether_wart.description"
+    },    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true},
+  "parent": "travelersgarden:root",
+  "criteria": {
+    "get_nether_wart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:nether_wart"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "travelersgarden:nether_wart_farm"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "farmersdelight:tomato_seeds"
+    },
+    "title": {
+      "translate": "advancements.travelersgarden.get_tomato_seeds.title"
+    },
+    "description": {
+      "translate": "advancements.travelersgarden.get_tomato_seeds.description"
+    },
+    "frame": "task",
+    "show_toast": true,    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "travelersgarden:farmers_delight_root",
+  "criteria": {
+    "get_tomato_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdelight:tomato_seeds"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "travelersgarden:fd_tomato_farm"
+    ]
+  }
+}

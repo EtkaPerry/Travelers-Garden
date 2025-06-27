@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "farmersdelight:cooking_pot"
+    },
+    "title": {
+      "translate": "advancements.travelersgarden.farmers_delight_root.title"
+    },
+    "description": {
+      "translate": "advancements.travelersgarden.farmers_delight_root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/husbandry.png"
+  },
+  "parent": "travelersgarden:root",
+  "criteria": {
+    "has_farmers_delight_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdelight:cabbage_seeds",
+              "farmersdelight:cabbage",
+              "farmersdelight:tomato_seeds",
+              "farmersdelight:tomato", 
+              "farmersdelight:onion",
+              "farmersdelight:rice"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

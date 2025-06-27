@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "travelersgarden:wheat_farm"
+    },
+    "title": {
+      "translate": "advancements.travelersgarden.root.title"
+    },
+    "description": {
+      "translate": "advancements.travelersgarden.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "entered_world": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

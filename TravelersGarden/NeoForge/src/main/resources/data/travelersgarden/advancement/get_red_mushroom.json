@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:red_mushroom"
+    },
+    "title": {
+      "translate": "advancements.travelersgarden.get_red_mushroom.title"
+    },
+    "description": {
+      "translate": "advancements.travelersgarden.get_red_mushroom.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "travelersgarden:root",
+  "criteria": {
+    "get_red_mushroom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:red_mushroom"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "travelersgarden:red_mushroom_farm"
+    ]
+  }
+}

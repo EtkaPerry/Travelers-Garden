@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:beetroot_seeds"
+    },
+    "title": {
+      "translate": "advancements.travelersgarden.get_beetroot_seeds.title"
+    },
+    "description": {
+      "translate": "advancements.travelersgarden.get_beetroot_seeds.description"
+    },    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true},
+  "parent": "travelersgarden:root",
+  "criteria": {
+    "get_beetroot_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:beetroot_seeds"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "travelersgarden:beetroot_farm"
+    ]
+  }
+}

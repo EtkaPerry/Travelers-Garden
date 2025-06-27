@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SWG",
+    "TDG",
+    "GGG"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "T": [
+      {
+        "item": "minecraft:torch"
+      },
+      {
+        "item": "minecraft:glowstone"
+      }
+    ],
+    "D": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "id": "travelersgarden:wheat_farm",
+    "count": 1
+  },
+  "replacements": {
+    "minecraft:water_bucket": "minecraft:bucket"
+  }
+}

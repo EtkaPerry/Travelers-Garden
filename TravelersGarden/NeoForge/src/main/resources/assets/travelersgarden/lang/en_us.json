@@ -1,0 +1,63 @@
+{
+  "itemGroup.travelersgarden.travelers_gardens": "Traveler's Gardens",
+  "item.travelersgarden.wheat_farm": "Wheat Garden",
+  "item.travelersgarden.carrot_farm": "Carrot Garden",
+  "item.travelersgarden.potato_farm": "Potato Garden",
+  "item.travelersgarden.beetroot_farm": "Beetroot Garden",  
+  "item.travelersgarden.nether_wart_farm": "Nether Wart Garden",
+  "item.travelersgarden.red_mushroom_farm": "Red Mushroom Garden",
+  "item.travelersgarden.brown_mushroom_farm": "Brown Mushroom Garden",
+  "item.travelersgarden.sweet_berries_farm": "Sweet Berry Garden",
+  "item.travelersgarden.fd_cabbage_farm": "Cabbage Garden (FD)",
+  "item.travelersgarden.fd_tomato_farm": "Tomato Garden (FD)",
+  "item.travelersgarden.fd_onion_farm": "Onion Garden (FD)",
+  "item.travelersgarden.fd_rice_farm": "Rice Garden (FD)",
+  "message.travelersgarden.recipes_unlocked": "You've discovered %s new Traveler's Garden recipes! Check your recipe book.",
+  "message.travelersgarden.recipe_unlocked": "You've discovered the %s recipe! Check your recipe book.",
+  "message.travelersgarden.seed_discovered": "You've discovered a new seed that can create %s!",
+  
+  "advancements.travelersgarden.get_wheat_seeds.title": "We can teleport bread!",
+  "advancements.travelersgarden.get_wheat_seeds.description": "Bread is the main course of any adventurer's diet. You unlock the wheat farm recipe.",
+
+  "advancements.travelersgarden.get_carrot.title": "What's up doc?",
+  "advancements.travelersgarden.get_carrot.description": "You found carrots and unlocked the carrot garden recipe.",
+  
+  "advancements.travelersgarden.get_potato.title": "Po-tay-toes!",
+  "advancements.travelersgarden.get_potato.description": "Boil 'em, mash 'em, stick 'em in a stew. You found potatoes now we have potatoes for second breakfast.",
+  
+  "advancements.travelersgarden.get_beetroot_seeds.title": "Just Beet It",
+  "advancements.travelersgarden.get_beetroot_seeds.description": "You found beetroot seeds to unlock the beetroot farm recipe.",  
+
+  "advancements.travelersgarden.get_nether_wart.title": "Nether Wart Found",
+  "advancements.travelersgarden.get_nether_wart.description": "You found nether wart to unlock the nether wart farm recipe.",
+
+  "advancements.travelersgarden.get_red_mushroom.title": "Level Up",
+  "advancements.travelersgarden.get_red_mushroom.description": "You found red mushroom.",
+
+  "advancements.travelersgarden.get_brown_mushroom.title": "Brown Mushroom Discovery",
+  "advancements.travelersgarden.get_brown_mushroom.description": "You found brown mushrooms.",
+
+  "advancements.travelersgarden.get_sweet_berries.title": "Sweet Berries Found",
+  "advancements.travelersgarden.get_sweet_berries.description": "Who eats these.",
+
+  "advancements.travelersgarden.get_cabbage_seeds.title": "My Cabbages!",
+  "advancements.travelersgarden.get_cabbage_seeds.description": "You found cabbage seeds now protect it with your life (Farmer's Delight).",
+
+  "advancements.travelersgarden.get_tomato_seeds.title": "My desire for french fries now even greater",
+  "advancements.travelersgarden.get_tomato_seeds.description": "You found tomato seeds to unlock the tomato farm recipe (Farmer's Delight).",
+
+  "advancements.travelersgarden.get_onion.title": "It have layers",
+  "advancements.travelersgarden.get_onion.description": "You found onions to unlock the onion farm recipe (Farmer's Delight)",
+
+  "advancements.travelersgarden.get_rice.title": "Welcome to the Rice Fields",
+  "advancements.travelersgarden.get_rice.description": "Monday to Friday we are open. You found rice to unlock the rice farm recipe (Farmer's Delight)",
+
+  "advancements.travelersgarden.fd_master_gardener.title": "Farmer's Delight Master Gardener",
+  "advancements.travelersgarden.fd_master_gardener.description": "Collect all Farmer's Delight Traveler's Gardens",
+  
+  "advancements.travelersgarden.root.title": "Traveler's Gardens",
+  "advancements.travelersgarden.root.description": "Portable farming solution",
+  
+  "advancements.travelersgarden.farmers_delight_root.title": "Farmer's Delight Integration",
+  "advancements.travelersgarden.farmers_delight_root.description": "Discover Traveler's Gardens that work with Farmer's Delight crops"
+}

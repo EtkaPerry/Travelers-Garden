@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "farmersdelight:onion"
+    },
+    "title": {
+      "translate": "advancements.travelersgarden.get_onion.title"
+    },
+    "description": {
+      "translate": "advancements.travelersgarden.get_onion.description"
+    },
+    "frame": "task",
+    "show_toast": true,    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "travelersgarden:farmers_delight_root",
+  "criteria": {
+    "get_onion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdelight:onion"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "travelersgarden:fd_onion_farm"
+    ]
+  }
+}

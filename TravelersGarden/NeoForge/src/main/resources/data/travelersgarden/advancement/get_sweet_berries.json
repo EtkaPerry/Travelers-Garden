@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:sweet_berries"
+    },
+    "title": {
+      "translate": "advancements.travelersgarden.get_sweet_berries.title"
+    },
+    "description": {
+      "translate": "advancements.travelersgarden.get_sweet_berries.description"
+    },    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true},
+  "parent": "travelersgarden:root",
+  "criteria": {
+    "get_sweet_berries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:sweet_berries"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "travelersgarden:sweet_berries_farm"
+    ]
+  }
+}
