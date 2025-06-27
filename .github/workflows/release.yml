@@ -1,0 +1,144 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        minecraft_version: ['1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4', '1.21.5', '1.21.6']
+        include:
+          - minecraft_version: '1.21'
+            neo_version: '21.0.167'
+            parchment_version: '2024.07.28'
+          - minecraft_version: '1.21.1'
+            neo_version: '21.1.77'
+            parchment_version: '2024.11.17'
+          - minecraft_version: '1.21.2'
+            neo_version: '21.2.25'
+            parchment_version: '2024.11.17'
+          - minecraft_version: '1.21.3'
+            neo_version: '21.3.25'
+            parchment_version: '2024.11.17'
+          - minecraft_version: '1.21.4'
+            neo_version: '21.4.89'
+            parchment_version: '2024.12.03'
+          - minecraft_version: '1.21.5'
+            neo_version: '21.5.69'
+            parchment_version: '2025.03.25'
+          - minecraft_version: '1.21.6'
+            neo_version: '21.6.25'
+            parchment_version: '2025.06.17'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Setup JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Extract version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./TravelersGarden/NeoForge/gradlew
+
+      - name: Update gradle.properties for current Minecraft version
+        run: |
+          cd ./TravelersGarden/NeoForge
+          sed -i "s/minecraft_version=.*/minecraft_version=${{ matrix.minecraft_version }}/" gradle.properties
+          sed -i "s/minecraft_version_range=.*/minecraft_version_range=[${{ matrix.minecraft_version }}]/" gradle.properties
+          sed -i "s/neo_version=.*/neo_version=${{ matrix.neo_version }}/" gradle.properties
+          sed -i "s/neo_version_range=.*/neo_version_range=[${{ matrix.neo_version }},)/" gradle.properties
+          sed -i "s/neogradle.subsystems.parchment.minecraftVersion=.*/neogradle.subsystems.parchment.minecraftVersion=${{ matrix.minecraft_version }}/" gradle.properties
+          sed -i "s/neogradle.subsystems.parchment.mappingsVersion=.*/neogradle.subsystems.parchment.mappingsVersion=${{ matrix.parchment_version }}/" gradle.properties
+          sed -i "s/mod_version=.*/mod_version=${{ steps.version.outputs.VERSION }}-mc${{ matrix.minecraft_version }}/" gradle.properties
+
+      - name: Build with Gradle
+        run: ./gradlew build
+        working-directory: ./TravelersGarden/NeoForge
+
+      - name: Find JAR file
+        id: jar
+        run: |
+          JAR_FILE=$(find ./TravelersGarden/NeoForge/build/libs -name "*.jar" | grep -v sources | head -1)
+          echo "JAR_PATH=$JAR_FILE" >> $GITHUB_OUTPUT
+          echo "JAR_NAME=$(basename $JAR_FILE)" >> $GITHUB_OUTPUT
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: travelersgarden-${{ steps.version.outputs.VERSION }}-mc${{ matrix.minecraft_version }}
+          path: ${{ steps.jar.outputs.JAR_PATH }}
+
+  create-release:
+    needs: build-and-release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: ./artifacts
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref }}
+          name: Release v${{ steps.version.outputs.VERSION }}
+          body: |
+            ## Travelers Garden v${{ steps.version.outputs.VERSION }}
+            
+            ### Features
+            - Portable gardening while on the move
+            - Works underground, in the Nether, and End dimensions
+            - Slower growth rate for balance
+            
+            ### Compatibility
+            This release supports Minecraft versions:
+            - 1.21
+            - 1.21.1
+            - 1.21.2
+            - 1.21.3
+            - 1.21.4
+            - 1.21.5
+            - 1.21.6
+            
+            ### Installation
+            1. Download the appropriate JAR file for your Minecraft version
+            2. Place it in your mods folder
+            3. Make sure you have NeoForge installed
+            
+            ### Files
+            - `travelersgarden-${{ steps.version.outputs.VERSION }}-mc1.21.jar` - For Minecraft 1.21
+            - `travelersgarden-${{ steps.version.outputs.VERSION }}-mc1.21.1.jar` - For Minecraft 1.21.1
+            - `travelersgarden-${{ steps.version.outputs.VERSION }}-mc1.21.2.jar` - For Minecraft 1.21.2
+            - `travelersgarden-${{ steps.version.outputs.VERSION }}-mc1.21.3.jar` - For Minecraft 1.21.3
+            - `travelersgarden-${{ steps.version.outputs.VERSION }}-mc1.21.4.jar` - For Minecraft 1.21.4
+            - `travelersgarden-${{ steps.version.outputs.VERSION }}-mc1.21.5.jar` - For Minecraft 1.21.5
+            - `travelersgarden-${{ steps.version.outputs.VERSION }}-mc1.21.6.jar` - For Minecraft 1.21.6
+          files: ./artifacts/**/*.jar
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
