@@ -59,5 +59,22 @@
   "advancements.travelersgarden.root.description": "Portable farming solution",
   
   "advancements.travelersgarden.farmers_delight_root.title": "Farmer's Delight Integration",
-  "advancements.travelersgarden.farmers_delight_root.description": "Discover Traveler's Gardens that work with Farmer's Delight crops"
+  "advancements.travelersgarden.farmers_delight_root.description": "Discover Traveler's Gardens that work with Farmer's Delight crops",
+
+  "travelersgarden.config.farmTickRate": "Farm Tick Rate",
+  "travelersgarden.config.growthSpeedMultiplier": "Global Growth Speed Multiplier", 
+  "travelersgarden.config.wheatSpeedMultiplier": "Wheat Speed Multiplier",
+  "travelersgarden.config.carrotSpeedMultiplier": "Carrot Speed Multiplier",
+  "travelersgarden.config.potatoSpeedMultiplier": "Potato Speed Multiplier",
+  "travelersgarden.config.beetrootSpeedMultiplier": "Beetroot Speed Multiplier",
+  "travelersgarden.config.netherWartSpeedMultiplier": "Nether Wart Speed Multiplier",
+  "travelersgarden.config.sweetBerriesSpeedMultiplier": "Sweet Berries Speed Multiplier",
+  "travelersgarden.config.cabbageSpeedMultiplier": "Cabbage Speed Multiplier (FD)",
+  "travelersgarden.config.tomatoSpeedMultiplier": "Tomato Speed Multiplier (FD)",
+  "travelersgarden.config.onionSpeedMultiplier": "Onion Speed Multiplier (FD)",
+  "travelersgarden.config.riceSpeedMultiplier": "Rice Speed Multiplier (FD)",
+  "travelersgarden.config.enableDebugLogging": "Enable Debug Logging",
+  "travelersgarden.config.speedBoostChance": "Speed Boost Chance",
+  "travelersgarden.config.speedBoostMinPercentage": "Speed Boost Min Percentage",
+  "travelersgarden.config.speedBoostMaxPercentage": "Speed Boost Max Percentage"
 }

@@ -10,14 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        minecraft_version: ['1.21', '1.21.1']
+        minecraft_version: ['1.21']
         include:
           - minecraft_version: '1.21'
-            neo_version: '21.0.167'
+            neo_version: '21.0.166'
             parchment_version: '2024.07.28'
-          - minecraft_version: '1.21.1'
-            neo_version: '21.1.77'
-            parchment_version: '2024.11.17'
     
     steps:
       - name: Checkout repository
@@ -87,7 +84,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: travelersgarden-${{ steps.version.outputs.VERSION }}-mc${{ matrix.minecraft_version }}
+          name: travelersgarden-${{ steps.version.outputs.VERSION }}-mc1.21-universal
           path: ${{ steps.jar.outputs.JAR_PATH }}
 
   create-release:
@@ -120,18 +117,17 @@ jobs:
             - Slower growth rate for balance
             
             ### Compatibility
-            This release supports Minecraft versions:
-            - 1.21
-            - 1.21.1
+            This release supports:
+            - **Minecraft 1.21.x** (including 1.21, 1.21.1, 1.21.2, etc.)
+            - Built with NeoForge ${{ matrix.neo_version }}
             
             ### Installation
-            1. Download the appropriate JAR file for your Minecraft version
+            1. Download the JAR file below
             2. Place it in your mods folder
-            3. Make sure you have NeoForge installed
+            3. Make sure you have NeoForge installed for Minecraft 1.21.x
             
             ### Files
-            - `travelersgarden-${{ steps.version.outputs.VERSION }}-mc1.21.jar` - For Minecraft 1.21
-            - `travelersgarden-${{ steps.version.outputs.VERSION }}-mc1.21.1.jar` - For Minecraft 1.21.1
+            - `travelersgarden-${{ steps.version.outputs.VERSION }}-mc1.21.jar` - Compatible with all Minecraft 1.21.x versions
           files: ./artifacts/**/*.jar
           draft: false
           prerelease: false

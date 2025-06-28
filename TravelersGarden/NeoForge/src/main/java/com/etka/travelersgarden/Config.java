@@ -22,69 +22,85 @@ public class Config {
     // Farm-specific configuration
     public static final ModConfigSpec.IntValue FARM_TICK_RATE = BUILDER
             .comment("How many ticks between farm growth attempts (20 ticks = 1 second)")
+            .translation("travelersgarden.config.farmTickRate")
             .defineInRange("farmTickRate", 37200, 100, 72000); // Default 31 minutes (1.5 MC days), range 5s-60min
 
     public static final ModConfigSpec.DoubleValue GROWTH_SPEED_MULTIPLIER = BUILDER
             .comment("Global growth speed multiplier for traveler's gardens (1.0 = 31 minutes default, higher = faster)")
+            .translation("travelersgarden.config.growthSpeedMultiplier")
             .defineInRange("growthSpeedMultiplier", 1.0, 0.1, 3.0);
 
     // Individual crop speed configurations
     public static final ModConfigSpec.DoubleValue WHEAT_SPEED_MULTIPLIER = BUILDER
             .comment("Speed multiplier for wheat crops")
+            .translation("travelersgarden.config.wheatSpeedMultiplier")
             .defineInRange("wheatSpeedMultiplier", 1.0, 0.1, 5.0);
     
     public static final ModConfigSpec.DoubleValue CARROT_SPEED_MULTIPLIER = BUILDER
             .comment("Speed multiplier for carrot crops")
+            .translation("travelersgarden.config.carrotSpeedMultiplier")
             .defineInRange("carrotSpeedMultiplier", 1.0, 0.1, 5.0);
     
     public static final ModConfigSpec.DoubleValue POTATO_SPEED_MULTIPLIER = BUILDER
             .comment("Speed multiplier for potato crops")
+            .translation("travelersgarden.config.potatoSpeedMultiplier")
             .defineInRange("potatoSpeedMultiplier", 1.0, 0.1, 5.0);
     
     public static final ModConfigSpec.DoubleValue BEETROOT_SPEED_MULTIPLIER = BUILDER
             .comment("Speed multiplier for beetroot crops")
+            .translation("travelersgarden.config.beetrootSpeedMultiplier")
             .defineInRange("beetrootSpeedMultiplier", 1.0, 0.1, 5.0);
     
     public static final ModConfigSpec.DoubleValue NETHER_WART_SPEED_MULTIPLIER = BUILDER
             .comment("Speed multiplier for nether wart crops")
+            .translation("travelersgarden.config.netherWartSpeedMultiplier")
             .defineInRange("netherWartSpeedMultiplier", 1.0, 0.1, 5.0);
     
     public static final ModConfigSpec.DoubleValue SWEET_BERRIES_SPEED_MULTIPLIER = BUILDER
             .comment("Speed multiplier for sweet berries crops")
+            .translation("travelersgarden.config.sweetBerriesSpeedMultiplier")
             .defineInRange("sweetBerriesSpeedMultiplier", 1.0, 0.1, 5.0);
 
     // Farmer's Delight crop speed configurations
     public static final ModConfigSpec.DoubleValue CABBAGE_SPEED_MULTIPLIER = BUILDER
             .comment("Speed multiplier for cabbage crops (Farmer's Delight)")
+            .translation("travelersgarden.config.cabbageSpeedMultiplier")
             .defineInRange("cabbageSpeedMultiplier", 1.0, 0.1, 5.0);
     
     public static final ModConfigSpec.DoubleValue TOMATO_SPEED_MULTIPLIER = BUILDER
             .comment("Speed multiplier for tomato crops (Farmer's Delight)")
+            .translation("travelersgarden.config.tomatoSpeedMultiplier")
             .defineInRange("tomatoSpeedMultiplier", 1.0, 0.1, 5.0);
     
     public static final ModConfigSpec.DoubleValue ONION_SPEED_MULTIPLIER = BUILDER
             .comment("Speed multiplier for onion crops (Farmer's Delight)")
+            .translation("travelersgarden.config.onionSpeedMultiplier")
             .defineInRange("onionSpeedMultiplier", 1.0, 0.1, 5.0);
     
     public static final ModConfigSpec.DoubleValue RICE_SPEED_MULTIPLIER = BUILDER
             .comment("Speed multiplier for rice crops (Farmer's Delight)")
+            .translation("travelersgarden.config.riceSpeedMultiplier")
             .defineInRange("riceSpeedMultiplier", 1.0, 0.1, 5.0);
 
     public static final ModConfigSpec.BooleanValue ENABLE_DEBUG_LOGGING = BUILDER
             .comment("Enable debug logging for farm operations")
+            .translation("travelersgarden.config.enableDebugLogging")
             .define("enableDebugLogging", false);
 
     // Speed boost configuration
     public static final ModConfigSpec.DoubleValue SPEED_BOOST_CHANCE = BUILDER
             .comment("Chance for speed boost per tick (0.0001 = 0.01% = 1 in 10,000 ticks)")
+            .translation("travelersgarden.config.speedBoostChance")
             .defineInRange("speedBoostChance", 0.0001, 0.0, 1.0);
     
     public static final ModConfigSpec.DoubleValue SPEED_BOOST_MIN_PERCENTAGE = BUILDER
             .comment("Minimum speed boost percentage (0.03 = 3%)")
+            .translation("travelersgarden.config.speedBoostMinPercentage")
             .defineInRange("speedBoostMinPercentage", 0.03, 0.01, 0.5);
     
     public static final ModConfigSpec.DoubleValue SPEED_BOOST_MAX_PERCENTAGE = BUILDER
             .comment("Maximum speed boost percentage (0.10 = 10%)")
+            .translation("travelersgarden.config.speedBoostMaxPercentage")
             .defineInRange("speedBoostMaxPercentage", 0.10, 0.01, 0.5);
 
     static final ModConfigSpec SPEC = BUILDER.build();
