@@ -1,6 +1,6 @@
 /implement
 exp
-/TravelersGarden/release
+release
 VERSION_UPDATE.md
 build-versions.ps1
 .github/copilot-instructions.md
