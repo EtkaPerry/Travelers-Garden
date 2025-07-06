@@ -82,12 +82,12 @@ Simply carry your gardens in your inventory and watch them grow as you explore, 
 
 ## ? Q&A
 
-- Why not every crop can't be made
-+ Some too big like tree to put inside a glass window
-- Will you continue to improve this?
-+I have ideas to improve but currently working on other stuff (mostly hidden) releated to minecraft or not
-- Can I improve it myself?
-+ According to the license, you can—and I encourage you to do so—but limitations do apply. Please refer to the license for more detailed information.
++ Why not every crop can't be made  
+-Some too big like tree to put inside a glass cube  
++ Will you continue to improve this?  
+-I have ideas to improve but currently working on other stuff (mostly hidden) releated to minecraft or not  
++ Can I improve it myself?  
+-According to the license, you can—and I encourage you to do so—but limitations do apply. Please refer to the license for more detailed information.
 
 ---
 
