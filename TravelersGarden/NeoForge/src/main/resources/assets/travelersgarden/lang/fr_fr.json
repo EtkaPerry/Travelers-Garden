@@ -1,0 +1,82 @@
+{
+  "itemGroup.travelersgarden.travelers_gardens": "Jardins du Voyageur",
+  "item.travelersgarden.wheat_farm": "Jardin de Blé",
+  "item.travelersgarden.carrot_farm": "Jardin de Carottes",
+  "item.travelersgarden.potato_farm": "Jardin de Pommes de Terre",
+  "item.travelersgarden.beetroot_farm": "Jardin de Betteraves",
+  "item.travelersgarden.nether_wart_farm": "Jardin de Verrues du Nether",
+  "item.travelersgarden.red_mushroom_farm": "Jardin de Champignons Rouges",
+  "item.travelersgarden.brown_mushroom_farm": "Jardin de Champignons Bruns",
+  "item.travelersgarden.sweet_berries_farm": "Jardin de Baies Sucrées",
+  "item.travelersgarden.fd_cabbage_farm": "Jardin de Choux (FD)",
+  "item.travelersgarden.fd_tomato_farm": "Jardin de Tomates (FD)",
+  "item.travelersgarden.fd_onion_farm": "Jardin d'Oignons (FD)",
+  "item.travelersgarden.fd_rice_farm": "Rizière (FD)",
+  "message.travelersgarden.recipes_unlocked": "Vous avez découvert %s nouvelles recettes de Jardins du Voyageur ! Consultez votre livre de recettes.",
+  "message.travelersgarden.recipe_unlocked": "Vous avez découvert la recette de %s ! Consultez votre livre de recettes.",
+  "message.travelersgarden.seed_discovered": "Vous avez découvert une nouvelle graine qui permet de cultiver du %s !",
+
+  "advancements.travelersgarden.get_wheat_seeds.title": "On peut téléporter du pain !",
+  "advancements.travelersgarden.get_wheat_seeds.description": "Le pain est l'aliment de base de tout aventurier. Vous avez débloqué la recette du jardin de blé.",
+  
+  "advancements.travelersgarden.get_carrot.title": "Quoi de neuf, docteur ?",
+  "advancements.travelersgarden.get_carrot.description": "Vous avez trouvé des carottes et débloqué la recette du jardin de carottes.",
+ 
+  "advancements.travelersgarden.get_potato.title": "Pa-ta-tes !",
+  "advancements.travelersgarden.get_potato.description": "Faites-les bouillir, écrasez-les, mettez-les dans un ragoût. Vous avez trouvé des pommes de terre, on a de quoi faire un second petit-déjeuner.",
+ 
+  "advancements.travelersgarden.get_beetroot_seeds.title": "Juste une betterave",
+  "advancements.travelersgarden.get_beetroot_seeds.description": "Vous avez trouvé des graines de betterave pour débloquer la recette du jardin de betteraves.",
+  
+  "advancements.travelersgarden.get_nether_wart.title": "Verrue du Nether trouvée",
+  "advancements.travelersgarden.get_nether_wart.description": "Vous avez trouvé des verrues du Nether pour débloquer la recette du jardin correspondant.",
+  
+  "advancements.travelersgarden.get_red_mushroom.title": "Niveau supérieur",
+  "advancements.travelersgarden.get_red_mushroom.description": "Vous avez trouvé un champignon rouge.",
+  
+  "advancements.travelersgarden.get_brown_mushroom.title": "Découverte de champignons bruns",
+  "advancements.travelersgarden.get_brown_mushroom.description": "Vous avez trouvé des champignons bruns.",
+ 
+  "advancements.travelersgarden.get_sweet_berries.title": "Baies sucrées trouvées",
+  "advancements.travelersgarden.get_sweet_berries.description": "Qui mange ça, sérieux.",
+
+  "advancements.travelersgarden.get_cabbage_seeds.title": "Mes choux !",
+  "advancements.travelersgarden.get_cabbage_seeds.description": "Vous avez trouvé des graines de chou, protégez-les avec votre vie (Farmer's Delight).",
+ 
+  "advancements.travelersgarden.get_tomato_seeds.title": "Encore plus envie de frites",
+  "advancements.travelersgarden.get_tomato_seeds.description": "Vous avez trouvé des graines de tomate et débloqué la recette du jardin de tomates (Farmer's Delight).",
+ 
+  "advancements.travelersgarden.get_onion.title": "Il a des couches",
+  "advancements.travelersgarden.get_onion.description": "Vous avez trouvé des oignons et débloqué la recette du jardin d'oignons (Farmer's Delight).",
+  
+  "advancements.travelersgarden.get_rice.title": "Bienvenue dans les rizières",
+  "advancements.travelersgarden.get_rice.description": "Du lundi au vendredi, on est ouverts. Vous avez trouvé du riz et débloqué la rizière (Farmer's Delight).",
+  
+  "advancements.travelersgarden.fd_master_gardener.title": "Maître Jardinier de Farmer's Delight",
+  "advancements.travelersgarden.fd_master_gardener.description": "Collectez tous les Jardins du Voyageur de Farmer's Delight.",
+  
+  "advancements.travelersgarden.root.title": "Jardins du Voyageur",
+  "advancements.travelersgarden.root.description": "Solution de culture portable",
+  
+  "advancements.travelersgarden.farmers_delight_root.title": "Intégration Farmer's Delight",
+  "advancements.travelersgarden.farmers_delight_root.description": "Découvrez les Jardins du Voyageur compatibles avec les cultures de Farmer's Delight.",
+  
+  "travelersgarden.config.farmTickRate": "Taux de ticks des Fermes",
+  "travelersgarden.config.growthSpeedMultiplier": "Multiplicateur Global de Vitesse de Croissance",
+  "travelersgarden.config.wheatSpeedMultiplier": "Multiplicateur de Croissance du Blé",
+  "travelersgarden.config.carrotSpeedMultiplier": "Multiplicateur de Croissance des Carottes",
+  "travelersgarden.config.potatoSpeedMultiplier": "Multiplicateur de Croissance des Pommes de Terre",
+  "travelersgarden.config.beetrootSpeedMultiplier": "Multiplicateur de Croissance des Betteraves",
+  "travelersgarden.config.netherWartSpeedMultiplier": "Multiplicateur de Croissance des Verrues du Nether",
+  "travelersgarden.config.sweetBerriesSpeedMultiplier": "Multiplicateur de Croissance des Baies Sucrées",
+  "travelersgarden.config.cabbageSpeedMultiplier": "Multiplicateur de Croissance des Choux (FD)",
+  "travelersgarden.config.tomatoSpeedMultiplier": "Multiplicateur de Croissance des Tomates (FD)",
+  "travelersgarden.config.onionSpeedMultiplier": "Multiplicateur de Croissance des Oignons (FD)",
+  "travelersgarden.config.riceSpeedMultiplier": "Multiplicateur de Croissance du Riz (FD)",
+  "travelersgarden.config.enableDebugLogging": "Activer les Journaux de Débogage",
+  "travelersgarden.config.speedBoostChance": "Chance d'Accélération de Croissance",
+  "travelersgarden.config.speedBoostMinPercentage": "Pourcentage Minimum de l'Accélération",
+  "travelersgarden.config.speedBoostMaxPercentage": "Pourcentage Maximum de l'Accélération",
+
+  "_comment": "French translation by TheLaval - https://github.com/TheLaval"
+}

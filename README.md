@@ -54,14 +54,11 @@ Simply carry your gardens in your inventory and watch them grow as you explore, 
 - [x] Recipe discovery system
 - [x] Configurable growth rates
 
-### Next Update
+### Possible Next Updates
 - [ ] Visual growth indicators
 - [ ] Garden upgrade system
-- [ ] Sound effects and particles
-
-### Future Features
-- [ ] Mystical agriculture support
-- [ ] Advanced garden types
+- [ ] More notifications
+- [ ] More config
 
 ### (Possible) Intergration with Other Mods
 - [x] Farmer's Delight integration
@@ -69,6 +66,7 @@ Simply carry your gardens in your inventory and watch them grow as you explore, 
 - [ ] Traveler's Backpack
 
 *Have a suggestion? [Open an issue](../../issues) to share your ideas!*
+*Have an Improvement? [Fork the repo](https://github.com/EtkaPerry/Travelers-Garden) and submit a pull request!*
 
 ---
 
@@ -76,7 +74,7 @@ Simply carry your gardens in your inventory and watch them grow as you explore, 
 
 - **Minecraft** 1.21 - 1.21.1
 - **NeoForge** 21.1.77+
-- **Optional**: Farmer's Delight (for additional crops)
+- **Optional**: Farmer's Delight (for some additional crops)
 
 ---
 
